@@ -1,0 +1,35 @@
+{
+  "name": "@makker/domain",
+  "version": "0.1.0",
+  "description": "Domains + Stores",
+  "author": "Mark C.",
+  "license": "UNLICENSED",
+  "private": true,
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "scripts": {
+    "build": "task build:node",
+    "build:js": "task build:js",
+    "build:types": "task build:types",
+    "clean": "task clean",
+    "clean:dirty": "task clean:dirty",
+    "clean:modules": "rm -rf node_modules",
+    "list:dirty": "task list:dirty",
+    "test": "task test"
+  },
+  "dependencies": {
+    "@hapi/joi": "^15.1.1",
+    "apollo-errors": "^1.9.0",
+    "camelcase": "^5.3.1",
+    "chalk": "^2.4.2",
+    "dynamoose": "^1.6.4",
+    "eventstore": "^1.14.1",
+    "lodash.clonedeep": "^4.5.0",
+    "shortid": "^2.2.12",
+    "snake-case": "^2.1.0"
+  },
+  "devDependencies": {
+    "@makker/scripts": "0.1.0",
+    "@types/acl": "^0.4.37"
+  }
+}
