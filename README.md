@@ -89,14 +89,14 @@ const resolverMap = {
   Mutation: {
     createTeam(obj, args, context, info) {
       const { actions, execute, payload } = context
-    	const { createTeam } = actions.teams
+      const { createTeam } = actions.teams
       return await execute(createTeam(args))
     },
   },
   Query: {
     getTeam(obj, args, context, info) {
       const { actions, fetch, payload } = context
-    	const { getTeam } = actions.teams
+      const { getTeam } = actions.teams
       return await fetch(getTeam(args))
     },
   },
